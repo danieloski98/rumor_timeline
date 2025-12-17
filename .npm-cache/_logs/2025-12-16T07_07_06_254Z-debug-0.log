@@ -1,0 +1,18 @@
+0 verbose cli /Users/Apple/.nvm/versions/node/v22.18.0/bin/node /Users/Apple/.nvm/versions/node/v22.18.0/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:/Users/Apple/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npmrc
+5 silly config load:file:/Users/Apple/.npmrc
+6 silly config load:file:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-global/etc/npmrc
+7 verbose title npm run build
+8 verbose argv "run" "build"
+9 verbose logfile logs-max:10 dir:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-cache/_logs/2025-12-16T07_07_06_254Z-
+10 verbose logfile /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-cache/_logs/2025-12-16T07_07_06_254Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server
+13 verbose os Darwin 25.2.0
+14 verbose node v22.18.0
+15 verbose npm  v10.9.3
+16 verbose exit 0
+17 info ok

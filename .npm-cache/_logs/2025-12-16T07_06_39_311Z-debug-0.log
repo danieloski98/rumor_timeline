@@ -1,0 +1,447 @@
+0 verbose cli /Users/Apple/.nvm/versions/node/v22.18.0/bin/node /Users/Apple/.nvm/versions/node/v22.18.0/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:/Users/Apple/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npmrc
+5 silly config load:file:/Users/Apple/.npmrc
+6 silly config load:file:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-global/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--no-audit" "--no-fund"
+9 verbose logfile logs-max:10 dir:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-cache/_logs/2025-12-16T07_06_39_311Z-
+10 verbose logfile /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-cache/_logs/2025-12-16T07_06_39_311Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @types/express@^5.0.3
+15 silly packumentCache full:https://registry.npmjs.org/@types%2fexpress cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@types%2fexpress 1084ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@types%2fexpress set size:undefined disposed:false
+18 silly fetch manifest @types/node@^22.10.2
+19 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/npm 1183ms
+21 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 1014ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:undefined disposed:false
+23 silly fetch manifest tsx@^4.19.2
+24 silly packumentCache full:https://registry.npmjs.org/tsx cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/tsx 244ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/tsx set size:undefined disposed:false
+27 silly fetch manifest typescript@^5.7.2
+28 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/typescript 2516ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/typescript set size:undefined disposed:false
+31 silly placeDep ROOT @types/express@5.0.6 OK for: timetracker_server@1.0.0 want: ^5.0.3
+32 silly placeDep ROOT @types/node@22.19.3 OK for: timetracker_server@1.0.0 want: ^22.10.2
+33 silly placeDep ROOT tsx@4.21.0 OK for: timetracker_server@1.0.0 want: ^4.19.2
+34 silly placeDep ROOT typescript@5.9.3 OK for: timetracker_server@1.0.0 want: ^5.7.2
+35 silly fetch manifest @types/body-parser@*
+36 silly packumentCache full:https://registry.npmjs.org/@types%2fbody-parser cache-miss
+37 silly fetch manifest @types/serve-static@^2
+38 silly packumentCache full:https://registry.npmjs.org/@types%2fserve-static cache-miss
+39 silly fetch manifest @types/express-serve-static-core@^5.0.0
+40 silly packumentCache full:https://registry.npmjs.org/@types%2fexpress-serve-static-core cache-miss
+41 silly fetch manifest undici-types@~6.21.0
+42 silly packumentCache full:https://registry.npmjs.org/undici-types cache-miss
+43 silly fetch manifest esbuild@~0.27.0
+44 silly packumentCache full:https://registry.npmjs.org/esbuild cache-miss
+45 silly fetch manifest get-tsconfig@^4.7.5
+46 silly packumentCache full:https://registry.npmjs.org/get-tsconfig cache-miss
+47 silly fetch manifest fsevents@~2.3.3
+48 silly packumentCache full:https://registry.npmjs.org/fsevents cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/@types%2fbody-parser 239ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/@types%2fbody-parser set size:undefined disposed:false
+51 http fetch GET 200 https://registry.npmjs.org/@types%2fserve-static 254ms (cache miss)
+52 silly packumentCache full:https://registry.npmjs.org/@types%2fserve-static set size:undefined disposed:false
+53 http fetch GET 200 https://registry.npmjs.org/undici-types 833ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/undici-types set size:undefined disposed:false
+55 http fetch GET 200 https://registry.npmjs.org/get-tsconfig 1006ms (cache miss)
+56 silly packumentCache full:https://registry.npmjs.org/get-tsconfig set size:undefined disposed:false
+57 http fetch GET 200 https://registry.npmjs.org/@types%2fexpress-serve-static-core 1112ms (cache miss)
+58 silly packumentCache full:https://registry.npmjs.org/@types%2fexpress-serve-static-core set size:undefined disposed:false
+59 http fetch GET 200 https://registry.npmjs.org/esbuild 1114ms (cache miss)
+60 silly packumentCache full:https://registry.npmjs.org/esbuild set size:undefined disposed:false
+61 http fetch GET 200 https://registry.npmjs.org/fsevents 1118ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/fsevents set size:undefined disposed:false
+63 silly placeDep ROOT @types/body-parser@1.19.6 OK for: @types/express@5.0.6 want: *
+64 silly placeDep ROOT @types/express-serve-static-core@5.1.0 OK for: @types/express@5.0.6 want: ^5.0.0
+65 silly placeDep ROOT @types/serve-static@2.2.0 OK for: @types/express@5.0.6 want: ^2
+66 silly fetch manifest @types/connect@*
+67 silly packumentCache full:https://registry.npmjs.org/@types%2fconnect cache-miss
+68 silly fetch manifest @types/qs@*
+69 silly packumentCache full:https://registry.npmjs.org/@types%2fqs cache-miss
+70 silly fetch manifest @types/send@*
+71 silly packumentCache full:https://registry.npmjs.org/@types%2fsend cache-miss
+72 silly fetch manifest @types/range-parser@*
+73 silly packumentCache full:https://registry.npmjs.org/@types%2frange-parser cache-miss
+74 silly fetch manifest @types/http-errors@*
+75 silly packumentCache full:https://registry.npmjs.org/@types%2fhttp-errors cache-miss
+76 http fetch GET 200 https://registry.npmjs.org/@types%2fconnect 259ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/@types%2fconnect set size:undefined disposed:false
+78 http fetch GET 200 https://registry.npmjs.org/@types%2fqs 337ms (cache miss)
+79 silly packumentCache full:https://registry.npmjs.org/@types%2fqs set size:undefined disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/@types%2frange-parser 338ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/@types%2frange-parser set size:undefined disposed:false
+82 http fetch GET 200 https://registry.npmjs.org/@types%2fsend 338ms (cache miss)
+83 silly packumentCache full:https://registry.npmjs.org/@types%2fsend set size:undefined disposed:false
+84 http fetch GET 200 https://registry.npmjs.org/@types%2fhttp-errors 339ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/@types%2fhttp-errors set size:undefined disposed:false
+86 silly placeDep ROOT @types/connect@3.4.38 OK for: @types/body-parser@1.19.6 want: *
+87 silly placeDep ROOT @types/qs@6.14.0 OK for: @types/express-serve-static-core@5.1.0 want: *
+88 silly placeDep ROOT @types/range-parser@1.2.7 OK for: @types/express-serve-static-core@5.1.0 want: *
+89 silly placeDep ROOT @types/send@1.2.1 OK for: @types/express-serve-static-core@5.1.0 want: *
+90 silly placeDep ROOT undici-types@6.21.0 OK for: @types/node@22.19.3 want: ~6.21.0
+91 silly placeDep ROOT @types/http-errors@2.0.5 OK for: @types/serve-static@2.2.0 want: *
+92 silly placeDep ROOT esbuild@0.27.1 OK for: tsx@4.21.0 want: ~0.27.0
+93 silly placeDep ROOT fsevents@2.3.3 OK for: tsx@4.21.0 want: ~2.3.3
+94 silly placeDep ROOT get-tsconfig@4.13.0 OK for: tsx@4.21.0 want: ^4.7.5
+95 silly fetch manifest @esbuild/aix-ppc64@0.27.1
+96 silly packumentCache full:https://registry.npmjs.org/@esbuild%2faix-ppc64 cache-miss
+97 silly fetch manifest @esbuild/android-arm@0.27.1
+98 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm cache-miss
+99 silly fetch manifest @esbuild/android-arm64@0.27.1
+100 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm64 cache-miss
+101 silly fetch manifest @esbuild/android-x64@0.27.1
+102 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-x64 cache-miss
+103 silly fetch manifest @esbuild/darwin-arm64@0.27.1
+104 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-arm64 cache-miss
+105 silly fetch manifest @esbuild/darwin-x64@0.27.1
+106 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-x64 cache-miss
+107 silly fetch manifest @esbuild/freebsd-arm64@0.27.1
+108 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 cache-miss
+109 silly fetch manifest @esbuild/freebsd-x64@0.27.1
+110 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-x64 cache-miss
+111 silly fetch manifest @esbuild/linux-arm@0.27.1
+112 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm cache-miss
+113 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm 343ms (cache miss)
+114 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm set size:undefined disposed:false
+115 silly fetch manifest @esbuild/linux-arm64@0.27.1
+116 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm64 cache-miss
+117 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm64 349ms (cache miss)
+118 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm64 set size:undefined disposed:false
+119 silly fetch manifest @esbuild/linux-ia32@0.27.1
+120 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ia32 cache-miss
+121 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-x64 402ms (cache miss)
+122 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-x64 set size:undefined disposed:false
+123 silly fetch manifest @esbuild/linux-loong64@0.27.1
+124 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-loong64 cache-miss
+125 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-x64 410ms (cache miss)
+126 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-x64 set size:undefined disposed:false
+127 silly fetch manifest @esbuild/linux-mips64el@0.27.1
+128 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-mips64el cache-miss
+129 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 461ms (cache miss)
+130 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 set size:undefined disposed:false
+131 silly fetch manifest @esbuild/linux-ppc64@0.27.1
+132 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ppc64 cache-miss
+133 http fetch GET 200 https://registry.npmjs.org/@esbuild%2faix-ppc64 520ms (cache miss)
+134 silly packumentCache full:https://registry.npmjs.org/@esbuild%2faix-ppc64 set size:undefined disposed:false
+135 silly fetch manifest @esbuild/linux-riscv64@0.27.1
+136 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-riscv64 cache-miss
+137 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-arm64 526ms (cache miss)
+138 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-arm64 set size:undefined disposed:false
+139 silly fetch manifest @esbuild/linux-s390x@0.27.1
+140 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-s390x cache-miss
+141 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ia32 310ms (cache miss)
+142 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ia32 set size:undefined disposed:false
+143 silly fetch manifest @esbuild/linux-x64@0.27.1
+144 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-x64 cache-miss
+145 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm64 337ms (cache miss)
+146 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm64 set size:undefined disposed:false
+147 silly fetch manifest @esbuild/netbsd-arm64@0.27.1
+148 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 cache-miss
+149 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-loong64 332ms (cache miss)
+150 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-loong64 set size:undefined disposed:false
+151 silly fetch manifest @esbuild/netbsd-x64@0.27.1
+152 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-x64 cache-miss
+153 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-mips64el 351ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-mips64el set size:undefined disposed:false
+155 silly fetch manifest @esbuild/openbsd-arm64@0.27.1
+156 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 cache-miss
+157 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ppc64 354ms (cache miss)
+158 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ppc64 set size:undefined disposed:false
+159 silly fetch manifest @esbuild/openbsd-x64@0.27.1
+160 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-x64 cache-miss
+161 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-s390x 327ms (cache miss)
+162 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-s390x set size:undefined disposed:false
+163 silly fetch manifest @esbuild/openharmony-arm64@0.27.1
+164 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenharmony-arm64 cache-miss
+165 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-riscv64 376ms (cache miss)
+166 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-riscv64 set size:undefined disposed:false
+167 silly fetch manifest @esbuild/sunos-x64@0.27.1
+168 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fsunos-x64 cache-miss
+169 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-x64 248ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-x64 set size:undefined disposed:false
+171 silly fetch manifest @esbuild/win32-arm64@0.27.1
+172 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-arm64 cache-miss
+173 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 231ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 set size:undefined disposed:false
+175 silly fetch manifest @esbuild/win32-ia32@0.27.1
+176 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-ia32 cache-miss
+177 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-x64 264ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-x64 set size:undefined disposed:false
+179 silly fetch manifest @esbuild/win32-x64@0.27.1
+180 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-x64 cache-miss
+181 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 238ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 set size:undefined disposed:false
+183 silly fetch manifest resolve-pkg-maps@^1.0.0
+184 silly packumentCache full:https://registry.npmjs.org/resolve-pkg-maps cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-x64 282ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-x64 set size:undefined disposed:false
+187 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-x64 1102ms (cache miss)
+188 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-x64 set size:undefined disposed:false
+189 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenharmony-arm64 259ms (cache miss)
+190 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenharmony-arm64 set size:undefined disposed:false
+191 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm 1115ms (cache miss)
+192 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm set size:undefined disposed:false
+193 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-arm64 321ms (cache miss)
+194 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-arm64 set size:undefined disposed:false
+195 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-ia32 320ms (cache miss)
+196 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-ia32 set size:undefined disposed:false
+197 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fsunos-x64 348ms (cache miss)
+198 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fsunos-x64 set size:undefined disposed:false
+199 http fetch GET 200 https://registry.npmjs.org/resolve-pkg-maps 244ms (cache miss)
+200 silly packumentCache full:https://registry.npmjs.org/resolve-pkg-maps set size:undefined disposed:false
+201 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-x64 269ms (cache miss)
+202 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-x64 set size:undefined disposed:false
+203 silly placeDep ROOT @esbuild/aix-ppc64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+204 silly placeDep ROOT @esbuild/android-arm@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+205 silly placeDep ROOT @esbuild/android-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+206 silly placeDep ROOT @esbuild/android-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+207 silly placeDep ROOT @esbuild/darwin-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+208 silly placeDep ROOT @esbuild/darwin-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+209 silly placeDep ROOT @esbuild/freebsd-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+210 silly placeDep ROOT @esbuild/freebsd-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+211 silly placeDep ROOT @esbuild/linux-arm@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+212 silly placeDep ROOT @esbuild/linux-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+213 silly placeDep ROOT @esbuild/linux-ia32@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+214 silly placeDep ROOT @esbuild/linux-loong64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+215 silly placeDep ROOT @esbuild/linux-mips64el@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+216 silly placeDep ROOT @esbuild/linux-ppc64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+217 silly placeDep ROOT @esbuild/linux-riscv64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+218 silly placeDep ROOT @esbuild/linux-s390x@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+219 silly placeDep ROOT @esbuild/linux-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+220 silly placeDep ROOT @esbuild/netbsd-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+221 silly placeDep ROOT @esbuild/netbsd-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+222 silly placeDep ROOT @esbuild/openbsd-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+223 silly placeDep ROOT @esbuild/openbsd-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+224 silly placeDep ROOT @esbuild/openharmony-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+225 silly placeDep ROOT @esbuild/sunos-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+226 silly placeDep ROOT @esbuild/win32-arm64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+227 silly placeDep ROOT @esbuild/win32-ia32@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+228 silly placeDep ROOT @esbuild/win32-x64@0.27.1 OK for: esbuild@0.27.1 want: 0.27.1
+229 silly placeDep ROOT resolve-pkg-maps@1.0.0 OK for: get-tsconfig@4.13.0 want: ^1.0.0
+230 silly reify moves {}
+231 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-x64
+232 silly reify mark deleted [
+232 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-x64'
+232 silly reify ]
+233 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-ia32
+234 silly reify mark deleted [
+234 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-ia32'
+234 silly reify ]
+235 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-arm64
+236 silly reify mark deleted [
+236 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-arm64'
+236 silly reify ]
+237 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/sunos-x64
+238 silly reify mark deleted [
+238 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/sunos-x64'
+238 silly reify ]
+239 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openharmony-arm64
+240 silly reify mark deleted [
+240 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openharmony-arm64'
+240 silly reify ]
+241 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-x64
+242 silly reify mark deleted [
+242 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-x64'
+242 silly reify ]
+243 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-arm64
+244 silly reify mark deleted [
+244 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-arm64'
+244 silly reify ]
+245 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-x64
+246 silly reify mark deleted [
+246 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-x64'
+246 silly reify ]
+247 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-arm64
+248 silly reify mark deleted [
+248 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-arm64'
+248 silly reify ]
+249 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-x64
+250 silly reify mark deleted [
+250 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-x64'
+250 silly reify ]
+251 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-s390x
+252 silly reify mark deleted [
+252 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-s390x'
+252 silly reify ]
+253 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-riscv64
+254 silly reify mark deleted [
+254 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-riscv64'
+254 silly reify ]
+255 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ppc64
+256 silly reify mark deleted [
+256 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ppc64'
+256 silly reify ]
+257 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-mips64el
+258 silly reify mark deleted [
+258 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-mips64el'
+258 silly reify ]
+259 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-loong64
+260 silly reify mark deleted [
+260 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-loong64'
+260 silly reify ]
+261 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ia32
+262 silly reify mark deleted [
+262 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ia32'
+262 silly reify ]
+263 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm64
+264 silly reify mark deleted [
+264 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm64'
+264 silly reify ]
+265 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm
+266 silly reify mark deleted [
+266 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm'
+266 silly reify ]
+267 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-x64
+268 silly reify mark deleted [
+268 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-x64'
+268 silly reify ]
+269 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-arm64
+270 silly reify mark deleted [
+270 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-arm64'
+270 silly reify ]
+271 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/darwin-x64
+272 silly reify mark deleted [
+272 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/darwin-x64'
+272 silly reify ]
+273 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-x64
+274 silly reify mark deleted [
+274 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-x64'
+274 silly reify ]
+275 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm64
+276 silly reify mark deleted [
+276 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm64'
+276 silly reify ]
+277 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm
+278 silly reify mark deleted [
+278 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm'
+278 silly reify ]
+279 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/aix-ppc64
+280 silly reify mark deleted [
+280 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/aix-ppc64'
+280 silly reify ]
+281 http cache get-tsconfig@https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.13.0.tgz 0ms (cache hit)
+282 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+283 http cache resolve-pkg-maps@https://registry.npmjs.org/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz 0ms (cache hit)
+284 http cache @esbuild/darwin-arm64@https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.27.1.tgz 0ms (cache hit)
+285 http cache undici-types@https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz 0ms (cache hit)
+286 http cache @types/range-parser@https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz 0ms (cache hit)
+287 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.27.1.tgz 0ms (cache hit)
+288 http cache @types/qs@https://registry.npmjs.org/@types/qs/-/qs-6.14.0.tgz 0ms (cache hit)
+289 http cache @types/send@https://registry.npmjs.org/@types/send/-/send-1.2.1.tgz 0ms (cache hit)
+290 http cache @types/express-serve-static-core@https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.1.0.tgz 0ms (cache hit)
+291 http cache @types/http-errors@https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz 0ms (cache hit)
+292 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz 0ms (cache hit)
+293 http cache @types/connect@https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz 0ms (cache hit)
+294 http cache @types/body-parser@https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz 0ms (cache hit)
+295 http cache tsx@https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz 0ms (cache hit)
+296 http cache @types/express@https://registry.npmjs.org/@types/express/-/express-5.0.6.tgz 0ms (cache hit)
+297 http cache @types/serve-static@https://registry.npmjs.org/@types/serve-static/-/serve-static-2.2.0.tgz 0ms (cache hit)
+298 http cache @types/node@https://registry.npmjs.org/@types/node/-/node-22.19.3.tgz 0ms (cache hit)
+299 silly tarball no local data for get-tsconfig@https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.13.0.tgz. Extracting by manifest.
+300 silly tarball no local data for fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz. Extracting by manifest.
+301 silly tarball no local data for resolve-pkg-maps@https://registry.npmjs.org/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz. Extracting by manifest.
+302 silly tarball no local data for @esbuild/darwin-arm64@https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.27.1.tgz. Extracting by manifest.
+303 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz. Extracting by manifest.
+304 silly tarball no local data for @types/range-parser@https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz. Extracting by manifest.
+305 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.27.1.tgz. Extracting by manifest.
+306 silly tarball no local data for @types/qs@https://registry.npmjs.org/@types/qs/-/qs-6.14.0.tgz. Extracting by manifest.
+307 silly tarball no local data for @types/send@https://registry.npmjs.org/@types/send/-/send-1.2.1.tgz. Extracting by manifest.
+308 silly tarball no local data for @types/express-serve-static-core@https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.1.0.tgz. Extracting by manifest.
+309 silly tarball no local data for @types/http-errors@https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz. Extracting by manifest.
+310 silly tarball no local data for typescript@https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz. Extracting by manifest.
+311 silly tarball no local data for @types/connect@https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz. Extracting by manifest.
+312 silly tarball no local data for @types/body-parser@https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz. Extracting by manifest.
+313 silly tarball no local data for tsx@https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz. Extracting by manifest.
+314 silly tarball no local data for @types/express@https://registry.npmjs.org/@types/express/-/express-5.0.6.tgz. Extracting by manifest.
+315 silly tarball no local data for @types/serve-static@https://registry.npmjs.org/@types/serve-static/-/serve-static-2.2.0.tgz. Extracting by manifest.
+316 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-22.19.3.tgz. Extracting by manifest.
+317 http fetch GET 200 https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz 252ms (cache miss)
+318 http fetch GET 200 https://registry.npmjs.org/esbuild/-/esbuild-0.27.1.tgz 253ms (cache miss)
+319 http fetch GET 200 https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 254ms (cache miss)
+320 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz 256ms (cache miss)
+321 http fetch GET 200 https://registry.npmjs.org/@types/send/-/send-1.2.1.tgz 261ms (cache miss)
+322 http fetch GET 200 https://registry.npmjs.org/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz 266ms (cache miss)
+323 http fetch GET 200 https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.13.0.tgz 270ms (cache miss)
+324 http fetch GET 200 https://registry.npmjs.org/@types/qs/-/qs-6.14.0.tgz 482ms (cache miss)
+325 http fetch GET 200 https://registry.npmjs.org/@types/express/-/express-5.0.6.tgz 482ms (cache miss)
+326 http fetch GET 200 https://registry.npmjs.org/@types/serve-static/-/serve-static-2.2.0.tgz 497ms (cache miss)
+327 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-22.19.3.tgz 795ms (cache miss)
+328 http fetch GET 200 https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz 1724ms (cache miss)
+329 http fetch GET 200 https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz 1733ms (cache miss)
+330 http fetch GET 200 https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.1.0.tgz 1735ms (cache miss)
+331 http fetch GET 200 https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz 1735ms (cache miss)
+332 http fetch GET 200 https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz 2260ms (cache miss)
+333 http fetch GET 200 https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.27.1.tgz 5054ms (cache miss)
+334 http fetch GET 200 https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz 7515ms (cache miss)
+335 info run fsevents@2.3.3 install node_modules/fsevents node-gyp rebuild
+336 info run fsevents@2.3.3 install { code: 1, signal: null }
+337 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/fsevents
+338 silly reify mark deleted [
+338 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/fsevents'
+338 silly reify ]
+339 info run esbuild@0.27.1 postinstall node_modules/esbuild node install.js
+340 info run esbuild@0.27.1 postinstall { code: 0, signal: null }
+341 silly ADD node_modules/resolve-pkg-maps
+342 silly ADD
+343 silly ADD
+344 silly ADD
+345 silly ADD
+346 silly ADD
+347 silly ADD
+348 silly ADD
+349 silly ADD
+350 silly ADD
+351 silly ADD
+352 silly ADD
+353 silly ADD
+354 silly ADD
+355 silly ADD
+356 silly ADD
+357 silly ADD
+358 silly ADD
+359 silly ADD
+360 silly ADD
+361 silly ADD
+362 silly ADD
+363 silly ADD node_modules/@esbuild/darwin-arm64
+364 silly ADD
+365 silly ADD
+366 silly ADD
+367 silly ADD
+368 silly ADD node_modules/get-tsconfig
+369 silly ADD
+370 silly ADD node_modules/esbuild
+371 silly ADD node_modules/@types/http-errors
+372 silly ADD node_modules/undici-types
+373 silly ADD node_modules/@types/send
+374 silly ADD node_modules/@types/range-parser
+375 silly ADD node_modules/@types/qs
+376 silly ADD node_modules/@types/connect
+377 silly ADD node_modules/@types/serve-static
+378 silly ADD node_modules/@types/express-serve-static-core
+379 silly ADD node_modules/@types/body-parser
+380 silly ADD node_modules/typescript
+381 silly ADD node_modules/tsx
+382 silly ADD node_modules/@types/node
+383 silly ADD node_modules/@types/express
+384 verbose cwd /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server
+385 verbose os Darwin 25.2.0
+386 verbose node v22.18.0
+387 verbose npm  v10.9.3
+388 notice
+388 notice New major version of npm available! 10.9.3 -> 11.7.0
+388 notice Changelog: https://github.com/npm/cli/releases/tag/v11.7.0
+388 notice To update run: npm install -g npm@11.7.0
+388 notice  { force: true, [Symbol(proc-log.meta)]: true }
+389 verbose exit 0
+390 info ok

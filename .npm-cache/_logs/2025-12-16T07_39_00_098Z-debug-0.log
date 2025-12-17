@@ -1,0 +1,164 @@
+0 verbose cli /Users/Apple/.nvm/versions/node/v22.18.0/bin/node /Users/Apple/.nvm/versions/node/v22.18.0/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:/Users/Apple/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npmrc
+5 silly config load:file:/Users/Apple/.npmrc
+6 silly config load:file:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-global/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--no-audit" "--no-fund"
+9 verbose logfile logs-max:10 dir:/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-cache/_logs/2025-12-16T07_39_00_098Z-
+10 verbose logfile /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/.npm-cache/_logs/2025-12-16T07_39_00_098Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @types/cors@^2.8.18
+15 silly packumentCache full:https://registry.npmjs.org/@types%2fcors cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@types%2fcors 1041ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@types%2fcors set size:undefined disposed:false
+18 silly fetch manifest @types/morgan@^1.9.9
+19 silly packumentCache full:https://registry.npmjs.org/@types%2fmorgan cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@types%2fmorgan 253ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@types%2fmorgan set size:undefined disposed:false
+22 silly placeDep ROOT @types/cors@2.8.19 OK for: timetracker_server@1.0.0 want: ^2.8.18
+23 silly placeDep ROOT @types/morgan@1.9.10 OK for: timetracker_server@1.0.0 want: ^1.9.9
+24 silly reify moves {}
+25 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-x64
+26 silly reify mark deleted [
+26 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-x64'
+26 silly reify ]
+27 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-ia32
+28 silly reify mark deleted [
+28 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-ia32'
+28 silly reify ]
+29 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-arm64
+30 silly reify mark deleted [
+30 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/win32-arm64'
+30 silly reify ]
+31 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/sunos-x64
+32 silly reify mark deleted [
+32 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/sunos-x64'
+32 silly reify ]
+33 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openharmony-arm64
+34 silly reify mark deleted [
+34 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openharmony-arm64'
+34 silly reify ]
+35 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-x64
+36 silly reify mark deleted [
+36 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-x64'
+36 silly reify ]
+37 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-arm64
+38 silly reify mark deleted [
+38 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/openbsd-arm64'
+38 silly reify ]
+39 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-x64
+40 silly reify mark deleted [
+40 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-x64'
+40 silly reify ]
+41 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-arm64
+42 silly reify mark deleted [
+42 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/netbsd-arm64'
+42 silly reify ]
+43 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-x64
+44 silly reify mark deleted [
+44 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-x64'
+44 silly reify ]
+45 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-s390x
+46 silly reify mark deleted [
+46 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-s390x'
+46 silly reify ]
+47 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-riscv64
+48 silly reify mark deleted [
+48 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-riscv64'
+48 silly reify ]
+49 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ppc64
+50 silly reify mark deleted [
+50 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ppc64'
+50 silly reify ]
+51 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-mips64el
+52 silly reify mark deleted [
+52 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-mips64el'
+52 silly reify ]
+53 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-loong64
+54 silly reify mark deleted [
+54 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-loong64'
+54 silly reify ]
+55 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ia32
+56 silly reify mark deleted [
+56 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-ia32'
+56 silly reify ]
+57 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm64
+58 silly reify mark deleted [
+58 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm64'
+58 silly reify ]
+59 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm
+60 silly reify mark deleted [
+60 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/linux-arm'
+60 silly reify ]
+61 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-x64
+62 silly reify mark deleted [
+62 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-x64'
+62 silly reify ]
+63 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-arm64
+64 silly reify mark deleted [
+64 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/freebsd-arm64'
+64 silly reify ]
+65 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/darwin-x64
+66 silly reify mark deleted [
+66 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/darwin-x64'
+66 silly reify ]
+67 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-x64
+68 silly reify mark deleted [
+68 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-x64'
+68 silly reify ]
+69 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm64
+70 silly reify mark deleted [
+70 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm64'
+70 silly reify ]
+71 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm
+72 silly reify mark deleted [
+72 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/android-arm'
+72 silly reify ]
+73 verbose reify failed optional dependency /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/aix-ppc64
+74 silly reify mark deleted [
+74 silly reify   '/Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server/node_modules/@esbuild/aix-ppc64'
+74 silly reify ]
+75 http cache @types/morgan@https://registry.npmjs.org/@types/morgan/-/morgan-1.9.10.tgz 0ms (cache hit)
+76 http cache @types/cors@https://registry.npmjs.org/@types/cors/-/cors-2.8.19.tgz 1ms (cache hit)
+77 silly tarball no local data for @types/morgan@https://registry.npmjs.org/@types/morgan/-/morgan-1.9.10.tgz. Extracting by manifest.
+78 silly tarball no local data for @types/cors@https://registry.npmjs.org/@types/cors/-/cors-2.8.19.tgz. Extracting by manifest.
+79 http fetch GET 200 https://registry.npmjs.org/@types/morgan/-/morgan-1.9.10.tgz 264ms (cache miss)
+80 http fetch GET 200 https://registry.npmjs.org/@types/cors/-/cors-2.8.19.tgz 803ms (cache miss)
+81 silly ADD node_modules/@types/morgan
+82 silly ADD node_modules/@types/cors
+83 silly ADD
+84 silly ADD
+85 silly ADD
+86 silly ADD
+87 silly ADD
+88 silly ADD
+89 silly ADD
+90 silly ADD
+91 silly ADD
+92 silly ADD
+93 silly ADD
+94 silly ADD
+95 silly ADD
+96 silly ADD
+97 silly ADD
+98 silly ADD
+99 silly ADD
+100 silly ADD
+101 silly ADD
+102 silly ADD
+103 silly ADD
+104 silly ADD
+105 silly ADD
+106 silly ADD
+107 silly ADD
+108 verbose cwd /Users/Apple/Documents/Projects/useparrallel/rumor/timetracker_server
+109 verbose os Darwin 25.2.0
+110 verbose node v22.18.0
+111 verbose npm  v10.9.3
+112 verbose exit 0
+113 info ok
