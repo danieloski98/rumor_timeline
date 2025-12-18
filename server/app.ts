@@ -29,7 +29,6 @@ app.get('/health', (req: Request, res: Response) => {
   res.json({ status: 'UP', timestamp: new Date() }).status(200);
 });
 
-
 app.use('/events/v1', router);
 
 // Catch-all 404 for any HTTP method that wasn't matched above.

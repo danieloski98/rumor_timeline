@@ -21,7 +21,7 @@ export class EventsService {
     const { inviteId, limit, cursor } = input;
 
     // NOTE: table name requested in query is activity_events.
-    const table = "activity_events";
+    const table = "helloworld.events";
 
     const whereParts = ["entity_id = {inviteId:String}", "entity_type = 'invite'"];
     if (cursor) {

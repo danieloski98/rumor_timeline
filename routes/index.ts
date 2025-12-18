@@ -15,7 +15,7 @@ const sqs = new SQSClient({
   endpoint: config.sqs.endpoint,
 });
 
-router.get("", async (_req: Request, res: Response) => {
+router.get("/invite-events", async (_req: Request, res: Response) => {
   // Query params:
   // - invite_id (required)
   // - cursor_occurred_at (optional; use with cursor_event_id)
