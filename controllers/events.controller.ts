@@ -34,7 +34,7 @@ export class EventsController {
       return;
     }
 
-    const limit = Math.min(parsePositiveInt(req.query.limit, 50), 250);
+    const limit = Math.min(parsePositiveInt(req.query.limit, 5), 250);
     const cursor: InviteEventsCursor | undefined =
       cursorOccurredAt && cursorEventId
         ? { cursor_occurred_at: cursorOccurredAt, cursor_event_id: cursorEventId }
@@ -44,6 +44,7 @@ export class EventsController {
 
     res.status(200).json({
       limit,
+      total: result.total,
       next_cursor: result.next_cursor,
       rows: result.rows,
     });
