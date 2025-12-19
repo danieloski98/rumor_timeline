@@ -97,7 +97,7 @@ export class EventsService {
    * Cursor semantics flip to ">" because ordering is ASC.
    */
   async listInviteEventsChronological(input: ListInviteEventsInput): Promise<ListInviteEventsOutput> {
-    const { inviteId, limit = 5, cursor } = input;
+    const { inviteId, limit = 50, cursor } = input;
 
     const table = "helloworld.events";
 
