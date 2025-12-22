@@ -50,10 +50,13 @@ export const config = {
     url: requiredStringFromEnv("CLICKHOUSE_URL"),
     username: stringFromEnv("CLICKHOUSE_USERNAME", "default")!,
     password: requiredStringFromEnv("CLICKHOUSE_PASSWORD"),
-    database: stringFromEnv("CLICKHOUSE_DATABASE", "default")!,
+    database: stringFromEnv("CLICKHOUSE_DATABASE", "analytics")!,
 
     // where the worker writes invite timeline events
     inviteTimelineTable: stringFromEnv("CLICKHOUSE_INVITE_TIMELINE_TABLE", "invite_timeline_events")!,
+
+    // where the API reads invite events from
+    eventsTable: stringFromEnv("CLICKHOUSE_INVITE_TIMELINE_TABLE", "events_dev")!,
   },
 
   // sqs worker

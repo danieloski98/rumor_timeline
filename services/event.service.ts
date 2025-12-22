@@ -1,4 +1,5 @@
 import { clickhouse } from "../utils/clickhouse";
+import { config } from "../config";
 
 export type InviteEventsCursor = {
   cursor_occurred_at: string;
@@ -21,8 +22,7 @@ export class EventsService {
   async listInviteEvents(input: ListInviteEventsInput): Promise<ListInviteEventsOutput> {
     const { inviteId, limit = 5, cursor } = input;
 
-    // NOTE: table name requested in query is activity_events.
-    const table = "helloworld.events";
+    const table = `${config.clickhouse.database}.${config.clickhouse.eventsTable}`;
 
     const whereParts = ["entity_id = {inviteId:String}", "entity_type = 'invite'"];
     if (cursor) {
@@ -99,7 +99,7 @@ export class EventsService {
   async listInviteEventsChronological(input: ListInviteEventsInput): Promise<ListInviteEventsOutput> {
     const { inviteId, limit = 50, cursor } = input;
 
-    const table = "helloworld.events";
+    const table = `${config.clickhouse.database}.${config.clickhouse.eventsTable}`;
 
     const whereParts = ["entity_id = {inviteId:String}", "entity_type = 'invite'"];
     if (cursor) {
