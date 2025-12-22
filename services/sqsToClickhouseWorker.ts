@@ -222,12 +222,16 @@ export async function runSqsToClickhouseWorker(options?: { signal?: AbortSignal 
         metadata: parseMetadataForClickHouse(event.metadata, metadataColumnType),
       }));
 
+      console.log(rows)
+
       // 1) Insert batch into ClickHouse. If this fails, we do NOT delete from SQS (so they retry).
-      await clickhouse.insert({
+      const data = await clickhouse.insert({
         table: config.clickhouse.inviteTimelineTable,
         values: rows,
         format: "JSONEachRow",
       });
+
+      console.log('Insert Resutt', data);
 
       // 2) Delete batch from SQS (max 10 per batch).
       const deleteEntries = parsed.map((p) => ({
