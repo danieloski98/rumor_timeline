@@ -20,7 +20,7 @@ export type ListInviteEventsOutput = {
 
 export class EventsService {
   async listInviteEvents(input: ListInviteEventsInput): Promise<ListInviteEventsOutput> {
-    const { inviteId, limit = 5, cursor } = input;
+    const { inviteId, limit = 50, cursor } = input;
 
     const table = `${config.clickhouse.database}.${config.clickhouse.eventsTable}`;
 
