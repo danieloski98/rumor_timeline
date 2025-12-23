@@ -24,6 +24,10 @@ router.get("/invite-events", async (_req: Request, res: Response) => {
   await eventsController.listInviteEvents(_req, res);
 });
 
+router.post("/invite-events/ingest", async (req: Request, res: Response) => {
+  await eventsController.ingestInviteTimelineEvent(req, res);
+});
+
 function buildTestMessage(overrides: Partial<InviteTimelineEventMessage> = {}): InviteTimelineEventMessage {
   const now = new Date().toISOString();
 
