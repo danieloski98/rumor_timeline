@@ -53,11 +53,76 @@ function sleep(ms: number, signal?: AbortSignal): Promise<void> {
   });
 }
 
+function isTransientNetworkError(err: unknown): boolean {
+  const e = err as { code?: unknown; errno?: unknown; message?: unknown };
+  const code = typeof e?.code === "string" ? e.code : undefined;
+  const message = typeof e?.message === "string" ? e.message : "";
+  return (
+    code === "ECONNRESET" ||
+    code === "ETIMEDOUT" ||
+    code === "EAI_AGAIN" ||
+    code === "ENOTFOUND" ||
+    code === "EPIPE" ||
+    message.includes("ECONNRESET") ||
+    message.includes("socket hang up")
+  );
+}
+
+async function withRetries<T>(
+  fn: () => Promise<T>,
+  options: { label: string; signal?: AbortSignal; maxAttempts?: number },
+): Promise<T> {
+  const { label, signal, maxAttempts = 8 } = options;
+  let attempt = 0;
+  // eslint-disable-next-line no-constant-condition
+  while (true) {
+    if (signal?.aborted) throw new Error("Aborted");
+    try {
+      return await fn();
+    } catch (err) {
+      attempt += 1;
+      if (!isTransientNetworkError(err) || attempt >= maxAttempts) throw err;
+      const backoffMs = Math.min(30_000, 500 * Math.pow(2, attempt));
+      // eslint-disable-next-line no-console
+      console.warn(`${label} failed (${(err as Error)?.message ?? String(err)}). Retrying in ${backoffMs}ms...`);
+      await sleep(backoffMs, signal);
+    }
+  }
+}
+
+function splitDbTable(raw: string): { database: string; table: string; fullName: string } {
+  const trimmed = raw.trim();
+  const parts = trimmed.split(".");
+  const database = parts.length === 2 ? parts[0] : config.clickhouse.database;
+  const table = parts.length === 2 ? parts[1] : trimmed;
+
+  const ident = /^[A-Za-z_][A-Za-z0-9_]*$/;
+  if (!ident.test(database)) throw new Error(`Invalid ClickHouse database name: ${database}`);
+  if (!ident.test(table)) throw new Error(`Invalid ClickHouse table name: ${table}`);
+
+  return { database, table, fullName: `${database}.${table}` };
+}
+
+async function tableExists(database: string, table: string): Promise<boolean> {
+  const result = await clickhouse.query({
+    query: `
+      SELECT count() AS c
+      FROM system.tables
+      WHERE database = {db:String} AND name = {table:String}
+      LIMIT 1
+    `,
+    query_params: { db: database, table },
+  });
+  const json = await result.json<{ c: string }>();
+  return Number(json.data?.[0]?.c ?? 0) > 0;
+}
+
 async function ensureTableExists(): Promise<void> {
-  const table = config.clickhouse.inviteTimelineTable;
+  const { database, table, fullName } = splitDbTable(config.clickhouse.inviteTimelineTable);
+
   await clickhouse.command({
     query: `
-      CREATE TABLE IF NOT EXISTS ${table} (
+      CREATE TABLE IF NOT EXISTS ${fullName} (
         event_id UUID,
         event_type LowCardinality(String),
         event_version UInt16,
@@ -83,10 +148,15 @@ async function ensureTableExists(): Promise<void> {
       ORDER BY (occurred_at, event_id)
     `,
   });
+
+  const exists = await tableExists(database, table);
+  if (!exists) {
+    throw new Error(`ClickHouse table not found after CREATE TABLE IF NOT EXISTS: ${fullName}`);
+  }
 }
 
 async function getMetadataColumnType(): Promise<string | undefined> {
-  const table = config.clickhouse.inviteTimelineTable;
+  const { database, table } = splitDbTable(config.clickhouse.inviteTimelineTable);
   const result = await clickhouse.query({
     query: `
       SELECT type
@@ -94,7 +164,7 @@ async function getMetadataColumnType(): Promise<string | undefined> {
       WHERE database = {db:String} AND table = {table:String} AND name = 'metadata'
       LIMIT 1
     `,
-    query_params: { db: config.clickhouse.database, table },
+    query_params: { db: database, table },
   });
   const json = await result.json<{ type: string }>();
   return json.data?.[0]?.type;
@@ -140,8 +210,12 @@ function isInviteTimelineEventMessage(v: unknown): v is InviteTimelineEventMessa
 export async function runSqsToClickhouseWorker(options?: { signal?: AbortSignal }): Promise<void> {
   const { signal } = options ?? {};
 
-  await ensureTableExists();
-  const metadataColumnType = await getMetadataColumnType();
+  // Validate/ensure ClickHouse is reachable + table exists before entering poll loop.
+  await withRetries(() => ensureTableExists(), { label: "ClickHouse ensureTableExists()", signal });
+  const metadataColumnType = await withRetries(() => getMetadataColumnType(), {
+    label: "ClickHouse getMetadataColumnType()",
+    signal,
+  });
 
   const sqs = new SQSClient({
     region: config.sqs.region,
@@ -222,16 +296,16 @@ export async function runSqsToClickhouseWorker(options?: { signal?: AbortSignal 
         metadata: parseMetadataForClickHouse(event.metadata, metadataColumnType),
       }));
 
-      console.log(rows)
-
       // 1) Insert batch into ClickHouse. If this fails, we do NOT delete from SQS (so they retry).
-      const data = await clickhouse.insert({
-        table: config.clickhouse.inviteTimelineTable,
-        values: rows,
-        format: "JSONEachRow",
-      });
-
-      console.log('Insert Resutt', data);
+      await withRetries(
+        () =>
+          clickhouse.insert({
+            table: config.clickhouse.inviteTimelineTable,
+            values: rows,
+            format: "JSONEachRow",
+          }),
+        { label: "ClickHouse insert()", signal, maxAttempts: 6 },
+      );
 
       // 2) Delete batch from SQS (max 10 per batch).
       const deleteEntries = parsed.map((p) => ({
