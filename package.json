@@ -9,7 +9,7 @@
     "dev:all": "concurrently -k -n server,worker -c blue,magenta \"npm run dev\" \"npm run dev:worker\"",
     "build": "tsc -p tsconfig.json",
     "start": "node dist/main.js",
-    "start:worker": "node dist/worker.js",
+    "start:worker": "tsx watch worker.ts",
     "start:all": "concurrently -k -n server,worker -c blue,magenta \"npm run start\" \"npm run start:worker\"",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "clean": "rm -rf dist",

@@ -42,7 +42,6 @@ async function runWithRetries(): Promise<void> {
       // eslint-disable-next-line no-console
       console.error("Worker crashed:", err);
 
-      // Railway can briefly drop outbound connections (ClickHouse/SQS), so retry.
       const backoffMs = Math.min(30_000, 1_000 * Math.pow(2, Math.min(attempt, 5)));
       // eslint-disable-next-line no-console
       console.log(`Retrying worker in ${backoffMs}ms (attempt ${attempt})...`);
